@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget Tracker</title>
+</head>
+<body>
+ <header>
+    <h1 style="display: flex;justify-content: center;">Personal Budget Tracker</h1>
+    <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+        <a href="#">Add Income/ Expense</a>
+        <a href="#">View Budget Summary</a>
+
+    </div>
+ </header>
+ <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+    <h2> Welcome to Our Personal Budget Tracker   </h2>
+    <p> We are developing a website where the user can add the expense/ Income and view the budget summary</p>
+ </div>
+ 
+<div> 
+  <h3 style="display: flex;justify-content: center;">Add Income/ Expense</h3>  
+  <form style="display: block;align-items: center;"><center>
+    <label for="Amount">Amount:</label>
+    <input type="number" >
+    <br><br>
+    <label for="Category">Category:</label>
+    <select>
+        <option>Select Option</option>
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Electronics</option>
+        <option>Accessories</option>
+        <option>Clothes</option>
+    </select>
+    <br><br>
+    <label for="Description">Description:</label>
+    <input type="text">
+    <br><br>
+    <label for="Date">Date:</label>
+    <input type="date">
+    <br><br>
+    <label for="Type">Type:</label>
+    <input type="radio">Income
+    <input type="radio">Expense
+    <br><br>
+</center>
+  </form>
+  <button style="display: block;margin: auto ;"> Add Entry</button>
+</div>
+<h2 style="display: flex;justify-content: center;">Budget Summary</h2>
+<center><table border="1">
+    <thead>
+<tr>
+    <th rowspan="2">Category</th>
+    <th colspan="2">Transaction Details</th>
+    <th rowspan="2">Status</th>
+    <th rowspan="2">Action</th>
+</tr>
+<tr>
+    <th>Amount</th>
+    <th>Description</th>
+</tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Food</td>
+        <td>₹250</td>
+        <td>Burger</td>
+        <td>Compeleted</td>
+        <td><button>Edit</button><button>Delete</button></td>
+    </tr>
+    <tr>
+        <td>Travel</td>
+        <td>₹1000</td>
+        <td>Mumbai To Nashik</td>
+        <td>Compeleted</td>
+        <td><button>Edit</button><button>Delete</button></td>
+    </tr>
+    <tr>
+        <td>Electronics</td>
+        <td>₹25000</td>
+        <td>Phone Purchased</td>
+        <td>Compeleted</td>
+        <td><button>Edit</button><button>Degotlete</button></td>
+    </tr>
+    <tr>
+        <td>Food</td>
+        <td>₹500</td>
+        <td>Party with Friends</td>
+        <td>Compeleted</td>
+        <td><button>Edit</button><button>Delete</button></td>
+    </tr>
+    <tr>
+        <td>Clothes</td>
+        <td>₹500</td>
+        <td>Tshirt Purchased</td>
+        <td>Compeleted</td>
+        <td><button>Edit</button><button>Delete</button></td>
+    </tr>
+    <tr>
+        <td>Accessories</td>
+        <td>₹1500</td>
+        <td>Earbuds Purchased</td>
+        <td>Compeleted</td>
+        <td><button>Edit</button><button>Delete</button></td>
+    </tr>
+</tbody>
+</table>
+</center>
+</body>
+<footer>
+    <span style="display: flex;justify-content: center  ;"><br><br>
+        Personal Budget Tracker - Version 1.0 
+    </span>
+</footer>
+</html>
