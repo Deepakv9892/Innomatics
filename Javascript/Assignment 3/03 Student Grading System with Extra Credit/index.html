@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Grading System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="grading-container">
+      <h1>Student Grading System</h1>
+
+      <form id="grade-form">
+        <label for="marks">Enter Marks (0-100):</label>
+        <input type="number" id="marks" name="marks" min="0" max="100" required>
+        <label for="attendance">Enter Attendance Percentage:</label>
+        <input type="number" id="attendance" name="attendance" min="0" max="100" required>
+        <button type="submit">Calculate Grade</button>
+      </form>
+
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
