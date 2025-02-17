@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="header">
+        <h1>Memory Match Game</h1>
+    </div>
+
+    <div class="landing-page" id="landingPage">
+        <h1>Select a Category</h1>
+        <div class="category-buttons">
+            <button class="category-button" onclick="startGame('flags')">Flags</button>
+            <button class="category-button" onclick="startGame('dragonball')">Dragon Ball Z</button>
+            <button class="category-button" onclick="startGame('cars')">Cars</button>
+            <button class="category-button" onclick="startGame('emojis')">Emojis</button>
+            <button class="category-button" onclick="startGame('animals')">Animal</button>
+            <button class="category-button" onclick="startGame('sports')">Sports</button>
+
+        </div>
+    </div>
+
+    <div class="game-container" id="gameContainer" style="display: none;">
+        <div class="game-stats">
+            <div>Score: <span id="score">0</span></div>
+            <div>Time: <span id="timer">60</span>s</div>
+        </div>
+        <div class="cards-grid" id="cardsGrid"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
