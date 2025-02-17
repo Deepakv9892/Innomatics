@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Web Application</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <h1>Computer Store</h1>
+        <ul>
+            <li><a href="#" class="active"> Home</a></li>
+            <li><a href="#"> About Us</a></li>
+            <li><a href="#"> Shop</a></li>
+            <li><a href="#"> Contact Us</a></li>
+        </ul>
+        <button class="cart" onclick="toggleCart()">
+            <i class="fas fa-shopping-cart"></i> 
+            <span id="cart-count" class="cart-count">0</span>
+        </button>
+    </nav>
+    <div class="products" id="product-list">
+        <div class="product-category">
+            <h2>Cabinets</h2>
+            <div class="product-container">
+                <div class="product" data-id="1" data-name="Ant Esports ICE-100 Mid Tower Gaming Cabinet" data-price="3500">
+                    <img src="assest/Cabinet/Ant ICE-100.webp" alt="Ant Esports Ice 100 Cabinet">
+                    <h3>Ant Esports ICE-100 Mid Tower Gaming Cabinet</h3>
+                    <p>₹3500</p>
+                    <div class="product-controls">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="adjustQuantity(this, -1)">-</button>
+                            <input type="number" value="1" min="1" max="99" class="qty-input" onchange="validateQuantity(this)">
+                            <button class="qty-btn" onclick="adjustQuantity(this, 1)">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-id="2" data-name="Ant Sports Cystal Z2 Gaming Cabinet" data-price="3615">
+                    <img src="assest/Cabinet/Ant Sport crystal z2.jpg" alt="Ant Sports Cystal Z2 Gaming Cabinet">
+                    <h3>Ant Esports Crystal Z2 ARGB (M-ATX) Mid-Tower  (White)</h3>
+                    <p>₹3615</p>
+                    <div class="product-controls">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="adjustQuantity(this, -1)">-</button>
+                            <input type="number" value="1" min="1" max="99" class="qty-input" onchange="validateQuantity(this)">
+                            <button class="qty-btn" onclick="adjustQuantity(this, 1)">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-id="3" data-name="MSI Gungnir 300R Airflow White Mid-Tower" data-price="13000">
+                    <img src="assest/Cabinet/MSI Gungnir 300R.jpg" alt="MSI Gungnir 300R Gaming Cabinet">
+                    <h3>MSI Gungnir 300R Airflow White Mid-Tower</h3>
+                    <p>₹13000</p>
+                    <div class="product-controls">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="adjustQuantity(this, -1)">-</button>
+                            <input type="number" value="1" min="1" max="99" class="qty-input" onchange="validateQuantity(this)">
+                            <button class="qty-btn" onclick="adjustQuantity(this, 1)">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-id="4" data-name="MSI MAG Forge 320R Airflow (ATX) Mid Tower Cabinet (Black)" data-price="5000">
+                    <img src="assest/Cabinet/MSI MAG Forge 320R Airflow (ATX) Mid Tower Cabinet (Black).jpg" alt="MSI MAG Forge 320R Gaming Cabinet">
+                    <h3>MSI MAG Forge 320R Airflow (ATX) Mid Tower Cabinet (Black)</h3>
+                    <p>₹5000</p>
+                    <div class="product-controls">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="adjustQuantity(this, -1)">-</button>
+                            <input type="number" value="1" min="1" max="99" class="qty-input" onchange="validateQuantity(this)">
+                            <button class="qty-btn" onclick="adjustQuantity(this, 1)">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="product-category">
+            <h2>RAM</h2>
+            <div class="product-container">
+                <div class="product" data-id="5" data-name="Adata XPG Gammix D30 16GB (16GBx1) DDR4 3200MHz Red" data-price="4000">
+                    <img src="assest/Ram/Adata XPG Gammix D30 16GB (16GBx1) DDR4 3200MHz Red.webp" alt="Adata XPG Gammix D30 16GB (16GBx1) DDR4 3200MHz Red">
+                    <h3>Adata XPG Gammix D30 16GB (16GBx1) DDR4 3200MHz Red</h3>
+                    <p>₹4000</p>
+                    <div class="product-controls">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="adjustQuantity(this, -1)">-</button>
+                            <input type="number" value="1" min="1" max="99" class="qty-input" onchange="validateQuantity(this)">
+                            <button class="qty-btn" onclick="adjustQuantity(this, 1)">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-id="6" data-name="Adata XPG Spectrix D35G RGB 32GB DDR4 3200MHz RAM Black" data-price="7000">
+                    <img src="assest/Ram/Adata XPG Spectrix D35G RGB 32GB DDR4 3200MHz RAM Black.jpg" alt="Adata XPG Spectrix D35G RGB 32GB DDR4 3200MHz RAM Black">
+                    <h3>Adata XPG Spectrix D35G RGB 32GB DDR4 3200MHz Black</h3>
+                    <p>₹7000</p>
+                    <div class="product-controls">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="adjustQuantity(this, -1)">-</button>
+                            <input type="number" value="1" min="1" max="99" class="qty-input" onchange="validateQuantity(this)">
+                            <button class="qty-btn" onclick="adjustQuantity(this, 1)">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-id="7" data-name="Acer Predator Apollo RGB 16GB DDR4 3600MHz Black" data-price="6000">
+                    <img src="assest/Ram/Acer Predator Apollo RGB 16GB DDR4 3600MHz Black.jpg" alt="Acer Predator Apollo RGB 16GB DDR4 3600MHz Black">
+                    <h3>Acer Predator Apollo RGB 16GB DDR4 3600MHz Black</h3>
+                    <p>₹6000</p>
+                    <div class="product-controls">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="adjustQuantity(this, -1)">-</button>
+                            <input type="number" value="1" min="1" max="99" class="qty-input" onchange="validateQuantity(this)">
+                            <button class="qty-btn" onclick="adjustQuantity(this, 1)">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-id="8" data-name="Adata XPG Spectrix D41 RGB 16GB DDR4 3200MHz Grey" data-price="5000">
+                    <img src="assest/Ram/Adata XPG Spectrix D41 RGB 16GB DDR4 3200MHz Grey.jpg" alt="Adata XPG Spectrix D41 RGB 16GB DDR4 3200MHz Grey">
+                    <h3>Adata XPG Spectrix D41 RGB 16GB DDR4 3200MHz Grey</h3>
+                    <p>₹5000</p>
+                    <div class="product-controls">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="adjustQuantity(this, -1)">-</button>
+                            <input type="number" value="1" min="1" max="99" class="qty-input" onchange="validateQuantity(this)">
+                            <button class="qty-btn" onclick="adjustQuantity(this, 1)">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-category">
+            <h2>Graphics Cards</h2>
+            <div class="product-container">
+                <div class="product" data-id="9" data-name="Gigabyte GTX 1650 Windforce OC 4GB Graphics Card" data-price="15000">
+                    <img src="assest/Graphic card/Gigabyte GTX 1650 D6 Windforce OC 4GB Graphics Card.jpg" alt="Gigabyte GTX 1650 Windforce OC 4GB Graphics Card">
+                    <h3>Gigabyte GTX 1650  Windforce OC 4GB Graphics Card</h3>
+                    <p>₹15000</p>
+                    <div class="product-controls">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="adjustQuantity(this, -1)">-</button>
+                            <input type="number" value="1" min="1" max="99" class="qty-input" onchange="validateQuantity(this)">
+                            <button class="qty-btn" onclick="adjustQuantity(this, 1)">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-id="10" data-name="Gigabyte RTX 3050 Windforce OC 6GB Gaming Graphics Card" data-price="17000">
+                    <img src="assest/Graphic card/Gigabyte RTX 3050 Windforce OC 6GB Gaming Graphics Card.jpg" alt="Gigabyte RTX 3050 Windforce OC 6GB Gaming Graphics Card">
+                    <h3>Gigabyte RTX 3050 Windforce OC 6GB Gaming Graphics Card</h3>
+                    <p>₹17000</p>
+                    <div class="product-controls">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="adjustQuantity(this, -1)">-</button>
+                            <input type="number" value="1" min="1" max="99" class="qty-input" onchange="validateQuantity(this)">
+                            <button class="qty-btn" onclick="adjustQuantity(this, 1)">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-id="11" data-name="Gigabyte RTX 4060 Eagle OC ICE 8GB Graphics Card" data-price="31000">
+                    <img src="assest/Graphic card/Gigabyte RTX 4060 Eagle OC ICE 8GB Graphics Card.jpg" alt="Gigabyte RTX 4060 Eagle OC ICE 8GB Graphics Card">
+                    <h3>Gigabyte RTX 4060 Eagle OC ICE 8GB Graphics Card</h3>
+                    <p>₹31000</p>
+                    <div class="product-controls">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="adjustQuantity(this, -1)">-</button>
+                            <input type="number" value="1" min="1" max="99" class="qty-input" onchange="validateQuantity(this)">
+                            <button class="qty-btn" onclick="adjustQuantity(this, 1)">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product" data-id="12" data-name="ASRock RX 7600 Steel Legend OC 8GB Graphics Card" data-price="26000">
+                    <img src="assest/Graphic card/ASRock RX 7600 Steel Legend OC 8GB Graphics Card.jpg" alt="ASRock RX 7600 Steel Legend OC 8GB Graphics Card">
+                    <h3>ASRock RX 7600 Steel Legend OC 8GB Graphics Card</h3>
+                    <p>₹26000</p>
+                    <div class="product-controls">
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="adjustQuantity(this, -1)">-</button>
+                            <input type="number" value="1" min="1" max="99" class="qty-input" onchange="validateQuantity(this)">
+                            <button class="qty-btn" onclick="adjustQuantity(this, 1)">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="cart-panel" id="cart-panel">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button class="close-button" onclick="toggleCart()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items-container">
+            <div id="cart-items"></div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">₹<span id="total-price">0.00</span></span>
+            </div>
+            <button class="clear-cart" onclick="clearCart()">Empty Cart</button>
+            <button class="checkout-button" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>

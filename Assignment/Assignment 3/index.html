@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+      padding: 20px;
+    }
+
+    .feature {
+      background-color: #fff;
+      padding: 20px;
+      width: 30%;
+      height: 400px; 
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #333;
+      text-align: center;
+      margin-bottom: 40px;
+      width: 100%;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label, button {
+      margin-top: 10px;
+    }
+
+    input, select {
+      padding: 8px;
+      margin-top: 5px;
+      width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 10px 15px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .feature {
+      background-color: #fff;
+      padding: 20px;
+      width: 30%;
+      height: 400px; 
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 20px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box; 
+    }
+
+    .feature.middle {
+      width: 30%; 
+    }
+
+    @media (max-width: 1200px) {
+      .feature {
+        width: 45%; 
+        height: auto; 
+      }
+    }
+
+    @media (max-width: 768px) {
+      .feature {
+        width: 100%; 
+        height: auto; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="feature">
+      <h2>1. ATM Withdrawal</h2>
+      <form id="atm-form">
+        <input type="number" id="atm-balance" placeholder="Balance" required>
+        <input type="number" id="atm-amount" placeholder="Amount to Withdraw" required>
+        <input type="password" id="atm-pin" placeholder="PIN" required>
+        <input type="password" id="atm-enteredPin" placeholder="Enter PIN" required>
+        <button type="submit">Withdraw</button>
+      </form>
+      <p id="atm-result"></p>
+    </div>
+
+    <div class="feature middle">
+      <h2>2. Shopping Discount & Shipping</h2>
+      <form id="shopping-form">
+        <input type="number" id="shopping-amount" placeholder="Order Amount" required>
+        <button type="submit">Calculate Total</button>
+      </form>
+      <p id="shopping-result"></p>
+    </div>
+
+    <div class="feature middle">
+      <h2>3. Student Grading System</h2>
+      <form id="grading-form">
+        <input type="number" id="grading-marks" placeholder="Marks" required>
+        <input type="number" id="grading-attendance" placeholder="Attendance (%)" required>
+        <button type="submit">Calculate Grade</button>
+      </form>
+      <p id="grading-result"></p>
+    </div>
+
+    <div class="feature">
+      <h2>4. Smart Traffic Light</h2>
+      <form id="traffic-form">
+        <input type="text" id="traffic-density" placeholder="Traffic Density (Heavy/Moderate/Light)" required>
+        <button type="submit">Set Traffic Light</button>
+      </form>
+      <p id="traffic-result"></p>
+    </div>
+
+    <div class="feature">
+      <h2>5. Movie Ticket Pricing</h2>
+      <form id="ticket-form">
+        <input type="number" id="ticket-age" placeholder="Age" required>
+        <input type="time" id="ticket-showtime" placeholder="Showtime (HH:MM)" required>
+        <button type="submit">Calculate Fare</button>
+      </form>
+      <p id="ticket-result"></p>
+    </div>
+
+    <div class="feature">
+      <h2>6. Job Application Filter</h2>
+      <form id="job-form">
+        <input type="number" id="job-age" placeholder="Age" required>
+        <input type="number" id="job-experience" placeholder="Experience (years)" required>
+        <input type="text" id="job-qualification" placeholder="Qualification" required>
+        <button type="submit">Check Eligibility</button>
+      </form>
+      <p id="job-result"></p>
+    </div>
+
+    <div class="feature">
+      <h2>7. E-commerce Coupon Redemption</h2>
+      <form id="coupon-form">
+        <input type="number" id="coupon-amount" placeholder="Order Amount" required>
+        <input type="text" id="coupon-code" placeholder="Coupon Code" required>
+        <button type="submit">Apply Coupon</button>
+      </form>
+      <p id="coupon-result"></p>
+    </div>
+
+    <div class="feature">
+      <h2>8. Fitness Membership Plan</h2>
+      <form id="fitness-form">
+        <select id="fitness-plan" required>
+          <option value="basic">Basic</option>
+          <option value="premium">Premium</option>
+          <option value="vip">VIP</option>
+        </select>
+        <label><input type="checkbox" id="wants-trainer"> Personal Trainer</label>
+        <label><input type="checkbox" id="wants-diet"> Diet Plan</label>
+        <button type="submit">Get Best Plan</button>
+      </form>
+      <p id="fitness-result"></p>
+    </div>
+
+    <div class="feature">
+      <h2>9. Electricity Bill Calculation</h2>
+      <form id="electricity-form">
+        <input type="number" id="electricity-units" placeholder="Units Consumed" required>
+        <input type="time" id="electricity-time" placeholder="Time of Day (HH:MM)" required>
+        <button type="submit">Calculate Bill</button>
+      </form>
+      <p id="electricity-result"></p>
+    </div>
+
+    <div class="feature">
+      <h2>10. Flight Ticket Booking</h2>
+      <form id="flight-form">
+        <select id="flight-class" required>
+          <option value="economy">Economy</option>
+          <option value="business">Business</option>
+          <option value="first">First Class</option>
+        </select>
+        <input type="number" id="flight-luggage" placeholder="Luggage Weight (kg)" required>
+        <label><input type="checkbox" id="flight-student"> Student</label>
+        <label><input type="checkbox" id="flight-senior"> Senior (60+)</label>
+        <button type="submit">Calculate Fare</button>
+      </form>
+      <p id="flight-result"></p>
+    </div>
+  </div>
+
+  <script>
+    function atmWithdrawal(balance, amount, pin, enteredPin) {
+      if (enteredPin !== pin) {
+        return "Incorrect PIN";
+      }
+      if (amount > balance) {
+        return "Insufficient Funds";
+      }
+      if (amount % 100 !== 0) {
+        return "Enter amount in multiples of 100";
+      }
+      return `Withdrawal Successful: ₹${amount}`;
+    }
+
+    function calculateFinalAmount(orderAmount) {
+      let discount = 0;
+      let shipping = 0;
+      if (orderAmount > 1000) {
+        discount = 0.20;
+      } else if (orderAmount >= 500) {
+        discount = 0.10;
+      }
+      if (orderAmount > 50) {
+        shipping = 0;
+      } else {
+        shipping = 10;
+      }
+      return (orderAmount - (orderAmount * discount) + shipping).toFixed(2);
+    }
+
+    function calculateGrade(marks, attendance) {
+      if (attendance > 90) marks += 5;
+      if (marks >= 90) return 'A';
+      if (marks >= 80) return 'B';
+      if (marks >= 70) return 'C';
+      if (marks >= 60) return 'D';
+      return 'F';
+    }
+
+    function trafficLightControl(density) {
+      if (density === "Heavy Traffic") return 60;
+      if (density === "Moderate Traffic") return 40;
+      return 20;
+    }
+
+    function calculateTicketPrice(age, showTime) {
+      let basePrice = 12;
+      if (showTime < '17:00') basePrice -= basePrice * 0.20;
+      if (age < 12) basePrice -= basePrice * 0.40;
+      if (age > 60) basePrice -= basePrice * 0.30;
+      return basePrice.toFixed(2);
+    }
+
+    function isEligibleForJob(age, experience, qualification) {
+      if (age < 21 || age > 55) return "Not Eligible";
+      if (experience < 2) return "Not Eligible";
+      if (qualification !== "Bachelor's Degree") return "Not Eligible";
+      return "Eligible";
+    }
+
+    function applyCoupon(orderAmount, couponCode) {
+      if (couponCode === "DISCOUNT10" && orderAmount > 500) {
+        return orderAmount - (orderAmount * 0.10);
+      }
+      if (couponCode === "FREESHIP" && orderAmount > 200) {
+        return orderAmount;
+      }
+      return orderAmount;
+    }
+
+    function choosePlan(planType, wantsTrainer, wantsDietPlan) {
+      if (planType === "vip" || (wantsTrainer && wantsDietPlan)) {
+        return "VIP Plan";
+      }
+      if (planType === "premium" || wantsTrainer) {
+        return "Premium Plan";
+      }
+      return "Basic Plan";
+    }
+
+    function calculateElectricityBill(units, timeOfDay) {
+      let rate = 5;
+      if (units > 100) rate = 4;
+      if (units > 300) rate = 3;
+      let totalBill = units * rate;
+      if (timeOfDay >= "20:00" || timeOfDay < "08:00") {
+        totalBill += totalBill * 0.10;
+      }
+      return totalBill.toFixed(2);
+    }
+
+    function calculateFlightFare(classType, luggageWeight, isStudent, isSenior) {
+      let baseFare = 300;
+      if (classType === "business") baseFare += 200;
+      if (classType === "first") baseFare += 500;
+      if (luggageWeight > 20) baseFare += Math.ceil((luggageWeight - 20) / 10) * 50;
+      if (isStudent) baseFare -= baseFare * 0.15;
+      if (isSenior) baseFare -= baseFare * 0.10;
+      return baseFare.toFixed(2);
+    }
+
+    document.getElementById('atm-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const balance = parseFloat(document.getElementById('atm-balance').value);
+      const amount = parseFloat(document.getElementById('atm-amount').value);
+      const pin = document.getElementById('atm-pin').value;
+      const enteredPin = document.getElementById('atm-enteredPin').value;
+      document.getElementById('atm-result').textContent = atmWithdrawal(balance, amount, pin, enteredPin);
+    });
+
+    document.getElementById('shopping-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const orderAmount = parseFloat(document.getElementById('shopping-amount').value);
+      document.getElementById('shopping-result').textContent = `Total Payable Amount: ₹${calculateFinalAmount(orderAmount)}`;
+    });
+
+    document.getElementById('grading-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const marks = parseInt(document.getElementById('grading-marks').value);
+      const attendance = parseInt(document.getElementById('grading-attendance').value);
+      document.getElementById('grading-result').textContent = `Grade: ${calculateGrade(marks, attendance)}`;
+    });
+
+    document.getElementById('traffic-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const density = document.getElementById('traffic-density').value;
+      document.getElementById('traffic-result').textContent = `Green light duration: ${trafficLightControl(density)} seconds`;
+    });
+
+    document.getElementById('ticket-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const age = parseInt(document.getElementById('ticket-age').value);
+      const showTime = document.getElementById('ticket-showtime').value;
+      document.getElementById('ticket-result').textContent = `Ticket Fare: ₹${calculateTicketPrice(age, showTime)}`;
+    });
+
+    document.getElementById('job-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const age = parseInt(document.getElementById('job-age').value);
+      const experience = parseInt(document.getElementById('job-experience').value);
+      const qualification = document.getElementById('job-qualification').value;
+      document.getElementById('job-result').textContent = isEligibleForJob(age, experience, qualification);
+    });
+
+    document.getElementById('coupon-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const orderAmount = parseFloat(document.getElementById('coupon-amount').value);
+      const couponCode = document.getElementById('coupon-code').value;
+      document.getElementById('coupon-result').textContent = `Final Amount: ₹${applyCoupon(orderAmount, couponCode)}`;
+    });
+
+    document.getElementById('fitness-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const planType = document.getElementById('fitness-plan').value;
+      const wantsTrainer = document.getElementById('wants-trainer').checked;
+      const wantsDietPlan = document.getElementById('wants-diet').checked;
+      document.getElementById('fitness-result').textContent = `Suggested Plan: ${choosePlan(planType, wantsTrainer, wantsDietPlan)}`;
+    });
+
+    document.getElementById('electricity-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const units = parseInt(document.getElementById('electricity-units').value);
+      const timeOfDay = document.getElementById('electricity-time').value;
+      document.getElementById('electricity-result').textContent = `Total Bill: ₹${calculateElectricityBill(units, timeOfDay)}`;
+    });
+
+    document.getElementById('flight-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const classType = document.getElementById('flight-class').value;
+      const luggageWeight = parseInt(document.getElementById('flight-luggage').value);
+      const isStudent = document.getElementById('flight-student').checked;
+      const isSenior = document.getElementById('flight-senior').checked;
+      document.getElementById('flight-result').textContent = `Final Fare: ₹${calculateFlightFare(classType, luggageWeight, isStudent, isSenior)}`;
+    });
+  </script>
+
+</body>
+</html>

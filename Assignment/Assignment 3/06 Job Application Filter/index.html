@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="application-container">
+      <h1>Job Application Filter</h1>
+
+      <form id="application-form">
+        <label for="age">Enter Age:</label>
+        <input type="number" id="age" name="age" min="18" required>
+        <label for="experience">Enter Experience (in years):</label>
+        <input type="number" id="experience" name="experience" min="0" required>
+        <label for="qualification">Enter Qualification:</label>
+        <input type="text" id="qualification" name="qualification" required>
+        <button type="submit">Check Eligibility</button>
+      </form>
+
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

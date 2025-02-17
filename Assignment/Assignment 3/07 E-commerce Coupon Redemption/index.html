@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Coupon Redemption</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="coupon-container">
+      <h1>E-commerce Coupon Redemption</h1>
+
+      <form id="coupon-form">
+        <label for="orderAmount">Enter Order Amount:</label>
+        <input type="number" id="orderAmount" name="orderAmount" required>
+        <label for="couponCode">Enter Coupon Code:</label>
+        <input type="text" id="couponCode" name="couponCode" required>
+        <button type="submit">Apply Coupon</button>
+      </form>
+
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Traffic Light System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="traffic-container">
+      <h1>Smart Traffic Light System</h1>
+
+      <form id="traffic-form">
+        <label for="density">Select Traffic Density:</label>
+        <select id="density" name="density" required>
+          <option value="heavy">Heavy Traffic</option>
+          <option value="moderate">Moderate Traffic</option>
+          <option value="light">Light Traffic</option>
+        </select>
+        <button type="submit">Get Green Light Duration</button>
+      </form>
+
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

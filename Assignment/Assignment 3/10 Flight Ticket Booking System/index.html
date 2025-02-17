@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Ticket Booking System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="ticket-container">
+      <h1>Flight Ticket Booking</h1>
+
+      <form id="ticket-form">
+        <label for="classType">Select Class:</label>
+        <select id="classType" name="classType">
+          <option value="economy">Economy</option>
+          <option value="business">Business</option>
+          <option value="first">First Class</option>
+        </select>
+        <label for="luggageWeight">Enter Luggage Weight (kg):</label>
+        <input type="number" id="luggageWeight" name="luggageWeight" required>
+        <label for="isStudent">Are you a Student?</label>
+        <input type="checkbox" id="isStudent" name="isStudent">
+        <label for="isSenior">Are you a Senior (above 60 years)?</label>
+        <input type="checkbox" id="isSenior" name="isSenior">
+        <button type="submit">Calculate Fare</button>
+      </form>
+
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

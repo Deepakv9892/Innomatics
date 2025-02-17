@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Membership Plan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="membership-container">
+      <h1>Choose Your Fitness Membership Plan</h1>
+
+      <form id="membership-form">
+        <label for="planType">Select Your Plan:</label>
+        <select id="planType" name="planType">
+          <option value="basic">Basic</option>
+          <option value="premium">Premium</option>
+          <option value="vip">VIP</option>
+        </select>
+        <label for="wantsTrainer">Do you want a personal trainer?</label>
+        <input type="checkbox" id="wantsTrainer" name="wantsTrainer">
+        <label for="wantsDietPlan">Do you want a diet plan?</label>
+        <input type="checkbox" id="wantsDietPlan" name="wantsDietPlan">
+        <button type="submit">Choose Plan</button>
+      </form>
+
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
