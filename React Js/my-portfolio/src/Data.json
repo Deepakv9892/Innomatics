@@ -1,0 +1,460 @@
+{
+  "heroData": {
+    "homeOneHero": {
+      "bgImgLink": "/images/background/hero-bg.jpg",
+      "imgLink": "/images/section/hero-img1.png",
+      "title": "Deepak <br />Vishwakarma",
+      "subTitle": "Hello, I’m",
+      "designation": "Full Stack Developer"
+    }
+  },
+  "aboutData": {
+    "imgLink": "/images/section/about.png",
+    "cvPdf": "/images/Resume.pdf",
+    "title": "Hi! I'm Deepak Vishwakarma",
+    "subtitle": "Full Stack Developer",
+    "text": "I am Deepak Vishwakarma, a Full Stack Developer with expertise in building scalable and efficient web applications.",
+    "details": [
+      {
+        "title": "Birthday",
+        "info": "11 September 2003"
+      },
+      {
+        "title": "Phone",
+        "info": "+91 98924 25844"
+      },
+      {
+        "title": "Email",
+        "info": "deepak.vishwakarma2k3@gmail.com"
+      },
+      {
+        "title": "From",
+        "info": "Mumbai, India"
+      },
+      {
+        "title": "Language",
+        "info": "English, Hindi, Marathi"
+      },
+      {
+        "title": "Freelance",
+        "info": "Available"
+      }
+    ]
+  },
+  "serviceData": {
+    "services": [
+      {
+        "imgLink": "./images/icon/webdevelopment.png",
+        "title": "Web Development",
+        "text": "I build high performance, scalable web applications tailored to your needs, ensuring seamless user experiences.",
+        "effect": "zoom-out-up",
+        "duration": "500",
+        "delay": "200"
+      },
+      {
+        "imgLink": "./images/icon/frontend.png",
+        "title": "Frontend & UI Development",
+        "text": "I craft intuitive and interactive user interfaces using React.js and modern frontend technologies.",
+        "effect": "zoom-out-up",
+        "duration": "500",
+        "delay": "300"
+      },
+      {
+        "imgLink": "./images/icon/responsive.png",
+        "title": "Responsive Web Design",
+        "text": "I create visually stunning, mobile-friendly websites that adapt flawlessly across all screen sizes and devices.",
+        "effect": "zoom-out-up",
+        "duration": "500",
+        "delay": "400"
+      },
+      {
+        "imgLink": "./images/icon/api.png",
+        "title": "API Development & Integration",
+        "text": "I develop secure and efficient RESTful & GraphQL APIs, integrating third-party services for enhanced functionality.",
+        "effect": "zoom-out-up",
+        "duration": "500",
+        "delay": "700"
+      },
+      {
+        "imgLink": "./images/icon/database.png",
+        "title": "Database Design & Management",
+        "text": "MySQL to MongoDB, I design and manage databases that optimize data flow and application performance.",
+        "effect": "zoom-out-up",
+        "duration": "500",
+        "delay": "500"
+      },
+      {
+        "imgLink": "./images/icon/backend.png",
+        "title": "Backend Development & Server Management",
+        "text": "I develop strong backend systems with Node.js, making sure they're secure, fast, and run smoothly.",
+        "effect": "zoom-out-up",
+        "duration": "500",
+        "delay": "600"
+      }
+    ]
+  },
+  "skillData": {
+    "title": "Skills & Expertise",
+    "text": "I have a strong foundation in computer engineering and a passion for building seamless digital experiences. I specialize in crafting dynamic web applications and scalable solutions, with expertise in both frontend and backend development. Whether designing intuitive user interfaces, developing secure APIs, or managing databases efficiently, I bring innovation and precision to every project. My journey has been shaped by real world experience, from building business websites to participating in hackathons and IoT projects.",
+    "skills": [
+      {
+        "title": "React.js",
+        "progress": "90%",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "200"
+      },
+      {
+        "title": "Node.js",
+        "progress": "85%",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "300"
+      },
+      {
+        "title": "MySQL",
+        "progress": "80%",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "400"
+      },
+      {
+        "title": "Python",
+        "progress": "85%",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "500"
+      },
+      {
+        "title": "Responsive Web Design",
+        "progress": "95%",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "600"
+      },
+      {
+        "title": "Java ",
+        "progress": "75%",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "700"
+      }
+    ]
+  },
+  "portfolioData": {
+    "portfolioItems": [
+      {
+        "imgLink": "./images/portfolio/fixmypc.png",
+        "imgLinkLg": "./images/portfolio/fixmypcwebsite.png",
+        "title": "Fix My PC",
+        "subTitle": "Computer Maintenance Website",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "200"
+      },
+      {
+        "imgLink": "./images/portfolio/thinkhealthy.png",
+        "imgLinkLg": "./images/portfolio/thinkhealthywebsite.png",
+        "title": "Think Healthy",
+        "subTitle": "Facilty Management",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "300"
+      },
+      {
+        "imgLink": "./images/portfolio/inkspirestudio.png",
+        "imgLinkLg": "./images/portfolio/inkspirestudios website.png",
+        "title": "Inkspire Studios",
+        "subTitle": "Customize Gifting Store",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "400"
+      },
+      {
+        "imgLink": "./images/portfolio/ananditatherapycenter.png",
+        "imgLinkLg": "./images/portfolio/ananditatherapycenterwebsite.png",
+        "title": "Anandita Therapy Center",
+        "subTitle": "Chiropractor Website",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "500"
+      },
+      {
+        "imgLink": "./images/portfolio/avyuktcorporation.png",
+        "imgLinkLg": "./images/portfolio/avyuktcorporationwebsite.png",
+        "title": "Avyukt Corporations",
+        "subTitle": "Finance & Loans Website",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "600"
+      },
+      {
+        "imgLink": "./images/portfolio/coffeeshop.png",
+        "imgLinkLg": "./images/portfolio/coffeshopwebsite.png",
+        "title": "Cafe Day",
+        "subTitle": "Coffee Shop",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "700"
+      },
+      {
+        "imgLink": "./images/portfolio/innomaticsclone.png",
+        "imgLinkLg": "./images/portfolio/innomaticsclonewebsite.png",
+        "title": "Innomatics Clone",
+        "subTitle": "Software Training Company",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "200"
+      },
+      {
+        "imgLink": "./images/portfolio/memorymatch.png",
+        "imgLinkLg": "./images/portfolio/memorymatchwebsite.png",
+        "title": "Memory Match",
+        "subTitle": "Game",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "300"
+      },
+      {
+        "imgLink": "./images/portfolio/shoppingcart.png",
+        "imgLinkLg": "./images/portfolio/shoppingcartwebsite.png",
+        "title": "Shopping Cart",
+        "subTitle": "online Cart",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "400"
+      },
+      {
+        "imgLink": "./images/portfolio/todolist.png",
+        "imgLinkLg": "./images/portfolio/todolistwebsite.png",
+        "title": "To Do List",
+        "subTitle": "Utility",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "500"
+      }
+    
+    ]
+  },
+  "blogData": {
+    "useFor": "blog",
+    "sliderSetting": {
+      "infinite": true,
+      "speed": 500,
+      "slidesToShow": 3,
+      "slidesToScroll": 1,
+      "arrows": false,
+      "responsive": [
+        {
+          "breakpoint": 991,
+          "settings": {
+            "slidesToShow": 2,
+            "autoplay": true
+          }
+        },
+        {
+          "breakpoint": 767,
+          "settings": {
+            "slidesToShow": 1,
+            "autoplay": true
+          }
+        }
+      ]
+    },
+    "informations": [
+      {
+        "imgLink": "./images/blog/blog1.jpg",
+        "designation": "Admin",
+        "date": "07-03-2023",
+        "title": "latest trends in Graphic design according to you?",
+        "href": "/blog/blog-details"
+      },
+      {
+        "imgLink": "./images/blog/blog2.jpg",
+        "designation": "Admin",
+        "date": "07-03-2023",
+        "title": "What are the latest trends in Graphic design according to you?",
+        "href": "/blog/blog-details"
+      },
+      {
+        "imgLink": "./images/blog/blog3.jpg",
+        "designation": "Admin",
+        "date": "07-03-2023",
+        "title": "Trends in Graphic design according to you?",
+        "href": "/blog/blog-details"
+      },
+      {
+        "imgLink": "./images/blog/blog1.jpg",
+        "designation": "Admin",
+        "date": "07-03-2023",
+        "title": "What are the latest trends in Graphic design according to you?",
+        "href": "/blog/blog-details"
+      },
+      {
+        "imgLink": "./images/blog/blog2.jpg",
+        "designation": "Admin",
+        "date": "07-03-2023",
+        "title": "The latest trends in Graphic design according to you?",
+        "href": "/blog/blog-details"
+      },
+      {
+        "imgLink": "./images/blog/blog3.jpg",
+        "designation": "Admin",
+        "date": "07-03-2023",
+        "title": "What are the latest trends in Graphic design according to you?",
+        "href": "/blog/blog-details"
+      }
+    ]
+  },
+  "reviewData": {
+    "useFor": "review",
+    "sliderSetting": {
+      "infinite": true,
+      "speed": 500,
+      "slidesToShow": 3,
+      "slidesToScroll": 1,
+      "arrows": false,
+      "responsive": [
+        {
+          "breakpoint": 991,
+          "settings": {
+            "slidesToShow": 2,
+            "autoplay": true
+          }
+        },
+        {
+          "breakpoint": 767,
+          "settings": {
+            "slidesToShow": 1,
+            "autoplay": true
+          }
+        }
+      ]
+    },
+    "informations": [
+      {
+        "imgLink": "./images/client/client1.png",
+        "title": "Richard Miles",
+        "designation": "Chairman",
+        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam accusamus autem itaque blanditiis enim debitis totam facilis reiciendis voluptate aspernatur!"
+      },
+      {
+        "imgLink": "./images/client/client2.png",
+        "title": "Vesta Shufelt",
+        "designation": "Executive Director",
+        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam accusamus autem itaque blanditiis enim debitis totam facilis reiciendis voluptate aspernatur!"
+      },
+      {
+        "imgLink": "./images/client/client3.png",
+        "title": "Joseph Alves",
+        "designation": "Managing Director",
+        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam accusamus autem itaque blanditiis enim debitis totam facilis reiciendis voluptate aspernatur!"
+      },
+      {
+        "imgLink": "./images/client/client1.png",
+        "title": "Richard Miles",
+        "designation": "Chairman",
+        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam accusamus autem itaque blanditiis enim debitis totam facilis reiciendis voluptate aspernatur!"
+      },
+      {
+        "imgLink": "./images/client/client2.png",
+        "title": "Vesta Shufelt",
+        "designation": "Executive Director",
+        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam accusamus autem itaque blanditiis enim debitis totam facilis reiciendis voluptate aspernatur!"
+      },
+      {
+        "imgLink": "./images/client/client3.png",
+        "title": "Joseph Alves",
+        "designation": "Managing Director",
+        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam accusamus autem itaque blanditiis enim debitis totam facilis reiciendis voluptate aspernatur!"
+      }
+    ]
+  },
+  "resumeData": {
+    "experienceTitle": "Experience",
+    "experience": [
+      {
+        "title": "Full-Stack Developer Freelance",
+        "duration": "Jan 2025 - Present",
+        "subTitle": "Project Based",
+        "text": "I create custom, High Performance websites and applications that exceed client expectations. By leveraging technologies like React, Node.js, and MySQL, I deliver seamless, user friendly solutions tailored to business needs."
+      },
+      {
+        "title": "Web Developer",
+        "duration": "Jan 2023 - Jan 2025",
+        "subTitle": "Build My Website",
+        "text": "Developed and launched multiple websites using WordPress, including E-Commerce and facility management sites. Optimized performance, ensured responsive design, and conducted rigorous testing for a seamless user experience."
+      },
+      {
+        "title": "IT Hardware and Network Engineer",
+        "duration": "August 2021 - Jan 2023",
+        "subTitle": "Shanbhag Computers",
+        "text": "Diagnosed and resolved IT hardware and network issues, ensuring seamless operations. Provided timely technical support to minimize downtime and improve system efficiency."
+      }
+    ],
+    "educationTitle": "Education",
+    "education": [
+      {
+        "title": "Bachelor in Computer Engineering",
+        "duration": "2023 - 2026",
+        "subTitle": "Mumbai University",
+        "text": "Gaining in depth knowledge of Software Development, Databases, System Architecture, Cloud Computing, AI technologies, and Machine Learning while working on real world projects and innovative solutions."
+      },
+      {
+        "title": "Diploma in Computer Engineering",
+        "duration": "2020 - 2023",
+        "subTitle": "Maharashtra State Board of Technical Education",
+        "text": "Built a strong foundation in Programming, Networking, Hardware, and System Design, with hands on experience in developing Web, IoT based, and Mobile Applications, while enhancing Teamwork and Problem solving skills."
+      },
+      {
+        "title": "Secondary School Certification",
+        "duration": "2006 - 2010",
+        "subTitle": "Maharashtra State Board",
+        "text": "I developed problem solving and analytical skills, laying the foundation for a tech career. I gained a foundation in English, languages, and mathematics, shaping my journey."
+      }
+    ]
+  },
+  "contactData": {
+    "formTitle": "Just say Hello",
+    "title": "Contact Info",
+    "subTitle": "Visit my social profile and get connected",
+    "text": "Contact us today to discuss your project needs and explore how we can bring your ideas to life with innovative solutions."
+  },
+  "socialData": [
+    {
+      "icon": "linkedin",
+      "type": "brands",
+      "title": "LinkedIn",
+      "link": "/"
+    },
+    {
+      "icon": "github",
+      "title": "Github",
+      "link": "/"
+    },
+    {
+      "icon": "envelope",
+      "title": "Email",
+      "link": "/"
+    },
+    {
+      "icon": "phone",
+      "title": "Phone",
+      "link": "/"
+    }
+  ],
+  "socialData2": [
+    {
+      "icon": "facebook-f",
+      "link": "/facebook"
+    },
+    {
+      "icon": "twitter",
+      "link": "/twitter"
+    },
+    {
+      "icon": "github",
+      "link": "/github"
+    }
+  ]
+}
